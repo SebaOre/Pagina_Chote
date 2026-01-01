@@ -18,7 +18,7 @@ const fotos = [
     src: new URL("img3.jpg", import.meta.env.BASE_URL).href,
   },
 ];
-
+console.log("BASE_URL:", import.meta.env.BASE_URL);
 function Fotos() {
   return (
     <div className="page">
