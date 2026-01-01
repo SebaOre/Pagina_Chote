@@ -5,17 +5,17 @@ const fotos = [
   {
     titulo: "Vista exterior",
     descripcion: "Para que veas que es real.",
-    src: `${import.meta.env.BASE_URL}img1.jpg`
+    src: new URL("img1.jpg", import.meta.env.BASE_URL).href,
   },
   {
     titulo: "Interior acogedor",
     descripcion: "Ambiente cómodo y seguro.",
-    src: `${import.meta.env.BASE_URL}img2.jpg`,
+    src: new URL("img2.jpg", import.meta.env.BASE_URL).href,
   },
   {
     titulo: "Detalle del servicio",
     descripcion: "Calidad garantizada (o no).",
-    src: `${import.meta.env.BASE_URL}img3.jpg`,
+    src: new URL("img3.jpg", import.meta.env.BASE_URL).href,
   },
 ];
 
