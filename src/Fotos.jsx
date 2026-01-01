@@ -5,17 +5,17 @@ const fotos = [
   {
     titulo: "Vista exterior",
     descripcion: "Para que veas que es real.",
-    src: "/img1.jpg", // coloca aquí el nombre real del archivo en /public
+    src: `${import.meta.env.BASE_URL}img1.jpg`
   },
   {
     titulo: "Interior acogedor",
     descripcion: "Ambiente cómodo y seguro.",
-    src: "/img2.jpg",
+    src: `${import.meta.env.BASE_URL}img2.jpg`,
   },
   {
     titulo: "Detalle del servicio",
     descripcion: "Calidad garantizada (o no).",
-    src: "/img3.jpg",
+    src: `${import.meta.env.BASE_URL}img3.jpg`,
   },
 ];
 
