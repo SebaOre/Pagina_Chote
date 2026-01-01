@@ -1,23 +1,28 @@
 import { Link } from "react-router-dom";
 import "./App.css";
+const basePath = import.meta.env.BASE_URL; // "/Pagina_Chote/"
+const origin = window.location.origin;     // "https://sebaore.github.io"
+const base = `${origin}${basePath}`;       // "https://sebaore.github.io/Pagina_Chote/"
+
 
 const fotos = [
   {
     titulo: "Vista exterior",
     descripcion: "Para que veas que es real.",
-    src: new URL("img1.jpg", import.meta.env.BASE_URL).href,
+    src: new URL("img1.jpg", base).href,
   },
   {
     titulo: "Interior acogedor",
     descripcion: "Ambiente cómodo y seguro.",
-    src: new URL("img2.jpg", import.meta.env.BASE_URL).href,
+    src: new URL("img2.jpg", base).href,
   },
   {
     titulo: "Detalle del servicio",
     descripcion: "Calidad garantizada (o no).",
-    src: new URL("img3.jpg", import.meta.env.BASE_URL).href,
+    src: new URL("img3.jpg", base).href,
   },
 ];
+
 console.log("BASE_URL:", import.meta.env.BASE_URL);
 function Fotos() {
   return (
